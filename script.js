@@ -54,19 +54,42 @@ console.log(csvArray);
         age: "58"
     }
     const newRow4 = {
-        id: "98",
-        name: "Bill",
-        occupation: "Doctor's Assistant",
+        id: "98", 
+        name: "Bill", 
+        occupation: "Doctor's Assistant", 
         age: "26"
     }
     
     // Store these objects in an array, in the order that they were originally listed.
-    const transform = [newRow1, newRow2, newRow3];
+    const transform = [newRow1, newRow2, newRow3, newRow4];
 
-    transform.push(newRow4);
-    
     console.log(transform);
 // Part 4: Sorting and Manipulating Data
 
-// Use .pop(), .splice() and .push()
+// Remove the last element from the sorted array
+transform.pop()
+
+// Insert object at index 1:
+let newObject = {
+    id: "48",
+    name: "Barry",
+    occupation: "Runner",
+    age: "25"
+}
+
+transform.splice(1, 0, newObject);
+
+
+// Insert object at the end of array:
+let pushObject = {
+    id: "7",
+    name: "Bilbo",
+    occupation: "None",
+    age: "111"
+}
+
+transform.push(pushObject)
+
+console.log(transform);
+
 // Part 5: Full Circle
