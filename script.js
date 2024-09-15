@@ -92,4 +92,15 @@ transform.push(pushObject)
 
 console.log(transform);
 
+// Calculate the average age of the group
+let sum = 0;
+
+for (let i = 0; i < transform.length; i++) {
+    sum += Number(transform[i].age); // Used Number function to ensure it's calculation the number and not string count
+}
+
+let average = sum / transform.length;
+
+console.log(average);
+
 // Part 5: Full Circle
