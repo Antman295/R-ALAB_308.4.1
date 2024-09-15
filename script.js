@@ -31,7 +31,7 @@ let csvArray = rows;
 
 console.log(csvArray);
 
-// Part 3: Trnasforming Data
+// Part 3: Transforming Data
 
 // For each row of data in the result array produced by your code above, create an object where the key of each value is the heading for that value’s column.
     // Convert these keys to all lowercase letters for consistency.
@@ -104,3 +104,17 @@ let average = sum / transform.length;
 console.log(average);
 
 // Part 5: Full Circle
+
+
+const orginial = [
+    ...transform.map(transform => [
+        transform.id,
+        transform.name,
+        transform.occupation,
+        transform.age
+    ])
+]
+    .map(e => e.join(', '))
+    .join("\n");
+
+console.log(orginial);
