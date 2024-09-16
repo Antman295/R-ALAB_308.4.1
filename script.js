@@ -105,7 +105,7 @@ console.log(average);
 
 // Part 5: Full Circle
 
-const orginial = [
+const csv = [
     [
         "ID",
         "Name",
@@ -122,4 +122,4 @@ const orginial = [
     .map(e => e.join(' '))
     .join("\n");
 
-console.log(orginial);
+console.log(csv);
