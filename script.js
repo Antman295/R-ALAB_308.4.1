@@ -105,8 +105,13 @@ console.log(average);
 
 // Part 5: Full Circle
 
-
 const orginial = [
+    [
+        "ID",
+        "Name",
+        "Occupation",
+        "Age"
+    ],
     ...transform.map(transform => [
         transform.id,
         transform.name,
@@ -114,7 +119,7 @@ const orginial = [
         transform.age
     ])
 ]
-    .map(e => e.join(', '))
+    .map(e => e.join(' '))
     .join("\n");
 
 console.log(orginial);
